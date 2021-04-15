@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.header {
+  min-height: 600px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../Images/hero1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: azure; }
+  .header__content {
+    min-height: 600px;
+    display: flex;
+    column-gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; }
+  .header__profile {
+    flex: 1;
+    align-self: center;
+    text-align: center; }
+    .header__profile .profile__img {
+      border-radius: 50%;
+      width: 50%; }
+    .header__profile .profile__icon {
+      color: azure; }
+  .header__text {
+    flex: 2;
+    font-family: "Montserrat", sans-serif; }
+  .header__button a {
+    margin-right: 1.2rem; }
+  .header__scroll {
+    position: absolute;
+    right: 5rem;
+    bottom: 6rem; }
+    .header__scroll .scroll__line {
+      width: 2px;
+      height: 10rem;
+      background-color: chartreuse;
+      position: absolute; }
