@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;700&display=swap");
 *,
 *:before,
 *:after {
@@ -6,9 +7,17 @@
   margin: 0;
   box-sizing: border-box; }
 
+/*utility classes*/
+body {
+  font-family: "Montserrat", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
 .header {
   min-height: 600px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../Images/hero1.jpg");
+  background-image: linear-gradient(to right, rgba(3, 10, 15, 0.85), rgba(3, 10, 15, 0.85)), url("../Images/hero1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -43,3 +52,139 @@
       height: 10rem;
       background-color: chartreuse;
       position: absolute; }
+
+/**About**/
+.about {
+  background-color: #39b54a;
+  min-height: 600px;
+  padding: 11rem 1.3rem; }
+  @media screen and (max-width: 800px) {
+    .about {
+      padding: 5rem 1rem; } }
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .about__subtitle {
+    font-family: "Montserrat", sans-serif; }
+  .about__title {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 2.8rem;
+    margin-bottom: 6rem;
+    text-align: center; }
+    @media screen and (max-width: 800px) {
+      .about__title {
+        font-size: 2rem;
+        margin-bottom: 3rem; } }
+  .about__text {
+    font-family: "lora", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    text-align: left; }
+    @media screen and (max-width: 800px) {
+      .about__text {
+        font-size: 1.2rem;
+        margin-bottom: 1.8rem; } }
+
+.skills {
+  display: flex;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  gap: 1rem;
+  background-color: rgba(3, 10, 15, 0.8); }
+  @media screen and (max-width: 800px) {
+    .skills {
+      flex-direction: column;
+      height: auto; } }
+  .skills__title {
+    flex: 1;
+    font-family: "Montserrat", sans-serif;
+    align-self: center;
+    text-align: center;
+    font-size: 2.3rem;
+    color: #fff;
+    border-right: 1px solid #39b54a;
+    height: 50%;
+    position: relative;
+    letter-spacing: 0.5rem; }
+    @media screen and (max-width: 800px) {
+      .skills__title {
+        border-right: 0;
+        height: auto;
+        flex: auto;
+        width: 100%;
+        font-size: 1.8rem;
+        padding: 2rem 0;
+        letter-spacing: 0.1rem; } }
+  .skills__heading {
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media screen and (max-width: 800px) {
+      .skills__heading {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0); } }
+  .skills__tabs {
+    flex: 1;
+    align-self: center;
+    padding: 4rem 2rem; }
+    @media screen and (max-width: 800px) {
+      .skills__tabs {
+        padding: 2rem 1rem; } }
+  .skills__tab {
+    margin: 1rem 1.2rem;
+    border: 2px solid #39b54a;
+    font-size: 1.4rem; }
+    @media screen and (max-width: 800px) {
+      .skills__tab {
+        width: 100%;
+        margin: 0.3rem; } }
+
+.btn-success {
+  background-color: #39b54a; }
+
+.projects {
+  margin: 2rem 0;
+  font-family: "Montserrat", sans-serif; }
+  .projects__heading {
+    margin: 0 auto;
+    width: 25%;
+    border-bottom: 1px solid #39b54a;
+    font-size: 3rem; }
+    @media screen and (max-width: 800px) {
+      .projects__heading {
+        width: 80%; } }
+  .projects__text {
+    margin: 2rem 0;
+    font-size: 1.5rem; }
+
+.project {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around; }
+  .project__text {
+    flex: 1;
+    text-align: center; }
+  .project__canvas {
+    flex: 1;
+    text-align: center; }
+
+.contact__address {
+  position: relative; }
+
+@media screen and (min-width: 768px) {
+  .contact__details {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); } }
+
+.contact__heading {
+  color: #39b54a; }

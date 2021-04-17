@@ -1,0 +1,66 @@
+.skills {
+  display: flex;
+  height: 100vh;
+  //   background: bisque;
+  font-family: "Montserrat", sans-serif;
+  gap: 1rem;
+  background-color: rgba($color-dark, 0.8);
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  &__title {
+    flex: 1;
+    font-family: "Montserrat", sans-serif;
+    align-self: center;
+    text-align: center;
+    font-size: 2.3rem;
+    color: $color-light;
+    border-right: 1px solid #39b54a;
+    height: 50%;
+    position: relative;
+    letter-spacing: 0.5rem;
+    @media screen and (max-width: 800px) {
+      border-right: 0;
+      height: auto;
+      flex: auto;
+      width: 100%;
+      font-size: 1.8rem;
+      padding: 2rem 0;
+      letter-spacing: 0.1rem;
+    }
+  }
+  &__heading {
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 800px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+    }
+  }
+  &__tabs {
+    flex: 1;
+    align-self: center;
+    // height: 100%;
+    padding: 4rem 2rem;
+    @media screen and (max-width: 800px) {
+      padding: 2rem 1rem;
+    }
+  }
+  &__tab {
+    margin: 1rem 1.2rem;
+    border: 2px solid #39b54a;
+    font-size: 1.4rem;
+    // color: $color-light;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      margin: 0.3rem;
+    }
+  }
+}

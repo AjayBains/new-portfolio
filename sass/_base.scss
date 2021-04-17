@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;700&display=swap");
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*utility classes*/
+
+// .btn {
+//   padding: 1.2rem 2.5rem;
+// }
+body {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: $color-light;
+}
+.header {
+  min-height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-dark, 0.85),
+      rgba($color-dark, 0.85)
+    ),
+    url("../Images/hero1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: azure;
+  &__content {
+    min-height: 600px;
+    display: flex;
+    column-gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+  &__profile {
+    flex: 1;
+    align-self: center;
+    text-align: center;
+    .profile__img {
+      border-radius: 50%;
+      width: 50%;
+    }
+    .profile__icon {
+      color: azure;
+    }
+  }
+  &__text {
+    flex: 2;
+    font-family: "Montserrat", sans-serif;
+  }
+  &__button a {
+    margin-right: 1.2rem;
+    // width: 38%;
+  }
+
+  &__scroll {
+    position: absolute;
+    right: 5rem;
+    bottom: 6rem;
+
+    .scroll__line {
+      width: 2px;
+      height: 10rem;
+      background-color: chartreuse;
+      position: absolute;
+    }
+  }
+}
+
+/**About**/
+.about {
+  background-color: #39b54a;
+  min-height: 600px;
+
+  padding: 11rem 1.3rem;
+  @media screen and (max-width: 800px) {
+    padding: 5rem 1rem;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__subtitle {
+    font-family: "Montserrat", sans-serif;
+  }
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 2.8rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    @media screen and (max-width: 800px) {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__text {
+    font-family: "lora", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    text-align: left;
+    @media screen and (max-width: 800px) {
+      font-size: 1.2rem;
+      margin-bottom: 1.8rem;
+    }
+  }
+}
