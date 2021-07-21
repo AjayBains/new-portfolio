@@ -1,2 +1,2 @@
 # new-portfolio
-under construction
+my portfolio with few of my projects
