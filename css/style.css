@@ -88,6 +88,13 @@ a {
         font-size: 1.2rem;
         margin-bottom: 1.8rem; } }
 
+.hide {
+  opacity: 0;
+  transform: translateY(8rem); }
+
+section {
+  transition: all 1.2s ease-in; }
+
 .skills {
   display: flex;
   height: 100vh;

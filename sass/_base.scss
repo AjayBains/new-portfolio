@@ -115,3 +115,11 @@ a {
     }
   }
 }
+// hide sections
+.hide {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+section {
+  transition: all 1.2s ease-in;
+}
